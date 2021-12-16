@@ -17,7 +17,7 @@
           </li> -->
         </ul>
 
-        <div class="dropdown" dropdown>
+        <div class="dropdown" dropdown *ngIf="loggedIn()">
           <a class="dropdown-toggle text-light" style="text-decoration: none;" dropdownToggle>
             Welcome {{authService.decodeToken?.unique_name}}
           </a>
