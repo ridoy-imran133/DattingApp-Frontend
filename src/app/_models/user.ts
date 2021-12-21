@@ -1,6 +1,6 @@
 import { Photo } from "./photo";
 
-export interface User{
+export class User{
         id: string;
         username: string;
         gender: string;
@@ -8,9 +8,9 @@ export interface User{
         knownAs: string;
         createdDate: Date;
         lastActive: Date
-        introduction?: string;
-        lookingFor?: string;
-        interests?: string;
+        introduction: string;
+        lookingFor: string;
+        interests: string;
         city: string;
         country: string;   
         photoUrl: string;
