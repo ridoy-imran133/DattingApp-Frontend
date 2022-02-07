@@ -71,4 +71,11 @@ export class MemberListComponent implements OnInit {
       this.alertifyService.errror(error);
     });
   }
+
+  getLike(){
+    this.userService.sendLike("12345", "4321").subscribe(data =>{
+    }, error =>{
+      this.alertifyService.errror(error);
+    });
+  }
 }
